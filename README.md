@@ -12,9 +12,11 @@ An example hierarchical representation of a custom subset of ImageNet. The class
 </p>
 
 
-
-
-
 # Conditional Training
+
+<p align="center">
+  <img src="https://github.com/Amitangshu1013/Encoding-Hierarchical-Information-in-Neural-Networks-helps-in-Subpopulation-Shift/blob/main/CondTrain.png" width="800">
+</p>
+
 
 # Conditional Evaluation
