@@ -20,5 +20,12 @@ Practical implementation of conditional training for a batch of images. The vali
   <img src="https://github.com/Amitangshu1013/Encoding-Hierarchical-Information-in-Neural-Networks-helps-in-Subpopulation-Shift/blob/main/valmask-1.png" width="800">
 </p>
 
+The following scripts are required for conditional training:
+1. Hierarchical_model.py contains the modified three headed ResNet-18 model.
+2. Functions required to convert one-hot encoded labels into hierarchical labels can be found in utils.py
+3. To train a multi-headed architecture with the proposed algorithm use train_hierarchical.py
+4. To train a baseline architecture with standard supervised training use train_baseline.py
+5. For Hyper-parameters, details of subpopulation shift benchmarks and training details please follow the [BREEDS Paper](https://openreview.net/pdf?id=mQPBmvyAuk)
+
 
 # Conditional Evaluation
