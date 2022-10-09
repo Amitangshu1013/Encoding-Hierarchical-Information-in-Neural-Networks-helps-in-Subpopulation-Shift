@@ -29,3 +29,16 @@ The following scripts are required for conditional training:
 
 
 # Conditional Evaluation
+
+All models are evaluated on accuracy (standard evaluation) and catastrophic co-efficient (conditional evaluation). Please refer to Section III.D for more details on the catastrophic co-efficient. This metric is used to capture the severity of mispredictions of the trained models in the presence and absence of the shift. The lower this quantity is for a model, the better it is. This quantity is computed by aggregrating the Least Common Amcester Distance (LCA) bewteen the correct and mispredicted nodes given a Hierarchy. 
+
+The following files are required for conditional evaluation:
+1. The script conditional_evaluation_baseline.py is used to evaluate the flat baseline models. 
+2. The script conditional_evaluation.py is used to evaluate the multi-headed hierarchy trained models.
+
+The output of each of these scripts are accuracy and catastrophic co-efficients on seen and unseen (subpopulation shifted) target sets.
+
+# Note
+
+1. The datasets and pre-trained models will be shared upon request. 
+2. Training and testing files are uploaded only for the LIVING-17 A dataset. In the paper we have shown results on four other datasets. The training and evaluation scripts for these datasets will be uploaded soon.
