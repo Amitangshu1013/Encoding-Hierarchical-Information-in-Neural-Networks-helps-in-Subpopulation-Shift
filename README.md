@@ -48,3 +48,14 @@ The output of each of these scripts are accuracy and catastrophic co-efficients 
 6. Comparisons with Branch CNN paper (related work) has been added in this submission (TAI). 
 7. All relevant lierature has been added as per comments. 
 8. The submission to ICLR had results on three datasets (LIVING 17 and custom datasets). This submission has results for two more larger subpopulation shift benchmarks. The previous results have also been improved. All models have been trained on 5 random seeds and mean numbers have been reported. Standard deviation results can be provided upon request. 
+
+## Reference
+```
+@article{Mukherjee2021EncodingHI,
+  title={Encoding Hierarchical Information in Neural Networks helps in Subpopulation Shift},
+  author={Amitangshu Mukherjee and Isha Garg and Kaushik Roy},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2112.10844}
+}
+```
