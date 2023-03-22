@@ -40,7 +40,7 @@ The output of each of these scripts are accuracy and catastrophic co-efficients 
 
 # Note
 
-1. The datasets and pre-trained models will be shared upon request. 
+1. The datasets and pre-trained models will be shared upon request. Please look into the Appendix of the ICLR submission for classes used for dataset creaton for Custom Datasets and LIVING-17 A. For hierarchical labels please refer to utils.py, the labels shown in the ICLR submission is not used in the final version of the accepted paper in IEEE Transactions on Artificial Intelligence.
 2. Training and testing files are uploaded only for the LIVING-17 A dataset. In the paper we have shown results on four other datasets. The training and evaluation scripts for these datasets will be uploaded soon.
 3. The Poster presented at the [Ninth FGVC9 Wokrshop](https://sites.google.com/view/fgvc9), CVPR 2022 is attached here [Poster](https://github.com/Amitangshu1013/Encoding-Hierarchical-Information-in-Neural-Networks-helps-in-Subpopulation-Shift/blob/main/CVRP_2022_FGVC9.pdf).
 4. The paper and reviews previously submitted to in ICLR 2022. The paper and reviews from ICLR 2022 are attached [here](https://openreview.net/pdf?id=hJk11f5yfy). 
