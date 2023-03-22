@@ -18,7 +18,7 @@ transform = transforms.Compose([
 
 
 # Load Model
-
+# Provide the path to your trained model
 PATH = './trial_5_trained_ResNet_18_baseline_best_model.pth'
 
 
@@ -85,10 +85,6 @@ cat_1 = 0
 cat_2 = 0
 cat_3 = 0
 
-
-
-
-
 with torch.no_grad():
     for data in valloader:
         images, labels = data
@@ -130,22 +126,12 @@ print("\n")
 print("For  Source Set......")
 
 
-
-print(correct_3)
-
-
-print(total_cat)
-print(total)
-
-
 print('Accuracy of the network (head_3) on the  test images: %.2f %%' % (
     100 * correct_3 / total))
 
 
-
+# Print Catastrophic co-efficient
 print(total_cat/total)
-
-
 
 
 correct_1 = 0
@@ -155,9 +141,6 @@ total = 0
 cat_1 = 0
 cat_2 = 0
 cat_3 = 0
-
-
-
 
 
 with torch.no_grad():
@@ -194,27 +177,15 @@ with torch.no_grad():
 
         
         
-
 total_cat = cat_1 + cat_2 + cat_3
 
 print("\n")
 print("For  Target Set......")
 
-
-
-print(correct_3)
-
-
-print(total_cat)
-print(total)
-
-
-
-
 print('Accuracy of the network (head_3) on the  test images: %.2f %%' % (
     100 * correct_3 / total))
 
-
+# Print Catastrophic co-efficient
 print(total_cat/total)
 
 
