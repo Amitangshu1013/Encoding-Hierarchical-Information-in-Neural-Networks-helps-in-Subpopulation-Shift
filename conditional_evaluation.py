@@ -21,7 +21,7 @@ transform = transforms.Compose([
 
 
 # Load Model
-
+# Provide the path for your trained hierarchical model
 PATH = './trial_5_BREEDS_17_best_Hierarchical_ResNet_18.pth'
 
 net = Hierarchical_resnet18()
@@ -136,7 +136,7 @@ print('Accuracy of the network (head_3) on the  test images: %.2f %%' % (
     100 * correct_3 / total))
 
 
-
+# Print Catastrophic co-efficient
 print(total_cat/total)
 
 
@@ -198,6 +198,6 @@ print("For  Target Set......")
 print('Accuracy of the network (head_3) on the  test images: %.2f %%' % (
     100 * correct_3 / total))
 
-
+# Print Catastrophic co-efficient
 print(total_cat/total)
 
