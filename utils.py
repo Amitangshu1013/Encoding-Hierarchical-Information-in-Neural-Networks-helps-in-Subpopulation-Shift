@@ -22,30 +22,6 @@ subclasses = [[['parrot'],['grouse']],
              [['ape','monkey'],['dog','wolf','fox','domestic cat','bear']]]
 
 
-def get_preds(ground_truth,predicted):
-    for x,y in enumerate(subclasses):
-        for i,j in enumerate(y):
-            for a,b in enumerate(j):
-                if predicted == b:
-                    global head1_pred 
-                    head1_pred = x
-                    global head2_pred 
-                    head2_pred = i
-                    global head3_pred
-                    head3_pred = a
-                
-    for s,t in enumerate(subclasses):
-        for u,v in enumerate(t):
-            for m,n in enumerate(v):
-                if ground_truth == n:
-                    global head1_gt
-                    head1_gt = s
-                    global head2_gt 
-                    head2_gt = u
-                    global head3_gt 
-                    head3_gt = m
-    
-    return head1_gt, head2_gt, head3_gt, head1_pred, head2_pred, head3_pred
 
 
 def get_hier_labels(ground_truth):            
