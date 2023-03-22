@@ -130,24 +130,12 @@ print("\n")
 print("For  Source Set......")
 
 
-print(correct_1)
-print(correct_2)
 
 print(correct_3)
 
 
-print(cat_1)
-print(cat_2)
-
-print(cat_3)
 print(total_cat)
 print(total)
-
-print('Accuracy of the network (head_1) on the  test images: %.2f %%' % (
-    100 * correct_1 / total))
-
-print('Accuracy of the network (head_2) on the test images: %.2f %%' % (
-    100 * correct_2 / total))
 
 
 print('Accuracy of the network (head_3) on the  test images: %.2f %%' % (
@@ -213,24 +201,14 @@ print("\n")
 print("For  Target Set......")
 
 
-print(correct_1)
-print(correct_2)
 
 print(correct_3)
 
 
-print(cat_1)
-print(cat_2)
-
-print(cat_3)
 print(total_cat)
 print(total)
 
-print('Accuracy of the network (head_1) on the  test images: %.2f %%' % (
-    100 * correct_1 / total))
 
-print('Accuracy of the network (head_2) on the test images: %.2f %%' % (
-    100 * correct_2 / total))
 
 
 print('Accuracy of the network (head_3) on the  test images: %.2f %%' % (
