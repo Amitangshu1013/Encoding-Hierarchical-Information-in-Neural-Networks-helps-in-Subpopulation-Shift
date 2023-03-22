@@ -109,16 +109,14 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 net.to(device);
 
-criterion_1 = nn.CrossEntropyLoss()
-criterion_2 = nn.CrossEntropyLoss()
-criterion_3 = nn.CrossEntropyLoss()
+criterion_1 = nn.CrossEntropyLoss(reduction="none")
+criterion_2 = nn.CrossEntropyLoss(reduction="none")
+criterion_3 = nn.CrossEntropyLoss(reduction="none")
 optimizer = optim.SGD(cl.parameters(), lr = 0.1, momentum=0.9, weight_decay= 1e-4)
 scheduler = optim.lr_scheduler.StepLR(optimizer, step_size= 150 , gamma=0.1)
 net.to(device);
 
 def validate(model, device, set_loader, criterion):
-    #device = 'cpu'
-    #model = model.to(device)
     model.eval()
     corrects = 0
     val_loss = 0.0
@@ -126,7 +124,7 @@ def validate(model, device, set_loader, criterion):
         for inputs, labels in set_loader:
             inputs, label = inputs.to(device), labels.to(device)
             output, output2, output3 = model(inputs)
-            val_loss += criterion(output3, label).item()
+            val_loss += (criterion(output3, label).mean()).item()
             val_loss = val_loss/len(set_loader)
             preds = output3.max(1, keepdim=True)[1]
             corrects += preds.eq(label.view_as(preds)).sum().item()
@@ -157,7 +155,6 @@ for epoch in range(450):
             head_2_labels.append(head_2_real)
         labels1 = torch.tensor(head_1_labels, dtype = torch.long)
         labels2 = torch.tensor(head_2_labels, dtype = torch.long)
-        #labels3 = torch.tensor(labels, dtype = torch.long)
         inputs, labels1, labels2, labels3 = inputs.to(device), labels1.to(device), labels2.to(device), labels.to(device) 
 
         # zero the parameter gradients
@@ -165,7 +162,7 @@ for epoch in range(450):
 
         # This marks the start of the conditional training block
         # forward + backward + optimize 
-        # forward fass for all 3 heads
+        # forward pass for all 3 heads
 
        
         head_1, head_2, head_3 = net(inputs)
