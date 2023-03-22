@@ -43,7 +43,7 @@ The output of each of these scripts are accuracy and catastrophic co-efficients 
 1. The datasets and pre-trained models will be shared upon request. 
 2. Training and testing files are uploaded only for the LIVING-17 A dataset. In the paper we have shown results on four other datasets. The training and evaluation scripts for these datasets will be uploaded soon.
 3. The Poster presented at the [Ninth FGVC9 Wokrshop](https://sites.google.com/view/fgvc9) is attached here [Poster](https://github.com/Amitangshu1013/Encoding-Hierarchical-Information-in-Neural-Networks-helps-in-Subpopulation-Shift/blob/main/CVRP_2022_FGVC9.pdf).
-4. The paper and reviews previously submitted to in ICLR 2022 and TMLR are provided. The paper and reviews from ICLR 2022 are attached [here](https://openreview.net/pdf?id=hJk11f5yfy) and [reviews](https://openreview.net/forum?id=hJk11f5yfy&referrer=%5Bthe%20profile%20of%20Amitangshu%20Mukherjee%5D(%2Fprofile%3Fid%3D~Amitangshu_Mukherjee1)). 
+4. The paper and reviews previously submitted to in ICLR 2022. The paper and reviews from ICLR 2022 are attached [here](https://openreview.net/pdf?id=hJk11f5yfy). 
 5. The follwing points have been rectified as per comments from ICLR 2022.
 6. Comparisons with Branch CNN paper (related work) has been added in this submission (TAI). 
 7. All relevant lierature has been added as per comments. 
