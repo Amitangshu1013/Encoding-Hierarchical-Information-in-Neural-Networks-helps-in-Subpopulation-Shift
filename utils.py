@@ -46,5 +46,5 @@ def get_level1(gt_head1):
 
 def get_level2(gt_head1,gt_head2):
     class_name = classes_2[gt_head1][gt_head2]
-    head_1 = classes_2_list.index(class_name)
-    return head_1
+    head_2 = classes_2_list.index(class_name)
+    return head_2
