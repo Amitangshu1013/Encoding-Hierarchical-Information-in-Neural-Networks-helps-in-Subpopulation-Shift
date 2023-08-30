@@ -51,11 +51,11 @@ The output of each of these scripts are accuracy and catastrophic co-efficients 
 
 ## Reference
 ```
-@article{Mukherjee2021EncodingHI,
-  title={Encoding Hierarchical Information in Neural Networks helps in Subpopulation Shift},
-  author={Amitangshu Mukherjee and Isha Garg and Kaushik Roy},
-  journal={ArXiv},
-  year={2021},
-  volume={abs/2112.10844}
+@article{mukherjee2023encoding,
+  title={Encoding Hierarchical Information in Neural Networks Helps in Subpopulation Shift},
+  author={Mukherjee, Amitangshu and Garg, Isha and Roy, Kaushik},
+  journal={IEEE Transactions on Artificial Intelligence},
+  year={2023},
+  publisher={IEEE}
 }
 ```
